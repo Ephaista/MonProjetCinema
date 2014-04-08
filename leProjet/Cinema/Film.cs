@@ -7,28 +7,28 @@ namespace Cinema
 {
     class Film
     {
-        private string titre;
-        private string resume;
-        public Film(string unTitre, string unResume)
+        private string affiche;
+        private string nom;
+        public Film(string uneAffiche, string unNom)
         {
-            this.titre = unTitre;
-            this.resume = unResume;
+            this.affiche = uneAffiche;
+            this.nom = unNom;
         }
-        public string getTitre()
+        public string getAffiche()
         {
-            return this.titre;
+            return this.affiche;
         }
-        public string getResume()
+        public string getNom()
         {
-            return this.resume;
+            return this.nom;
         }
-        public void setTitre(string unTitre)
+        public void setAffiche(string uneAffiche)
         {
-            this.titre = unTitre;
+            this.affiche = uneAffiche;
         }
-        public void setResume(string unResume)
+        public void SetNom(string unNom)
         {
-            this.resume = unResume;
+            this.nom = unNom;
         }
     }
 }
