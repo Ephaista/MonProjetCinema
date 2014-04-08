@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cinema
 {
-    class Salle
+    class Salle : Film
     {
 
         // Attributs
@@ -16,6 +16,23 @@ namespace Cinema
         private double prix;
 
 
+        // Constructeur
+
+        public Salle(int unNbPlace, int unNbPlaceTarifNormal, int unNbPlaceTarifReduit, double unPourcentageReduction, double unPrix, string uneAffiche, string unNom) :base(uneAffiche, unNom)
+        {
+            this.nbPlace = unNbPlace;
+            this.nbPlaceTarifNormal = unNbPlaceTarifNormal;
+            this.nbPlaceTarifReduit = unNbPlaceTarifReduit;
+            this.pourcentageReduction = unPourcentageReduction;
+            this.prix = unPrix;
+        }
+
+        // Méthodes
+
+        public void remiseAZero()
+        {
+
+        }
 
     }
 }
