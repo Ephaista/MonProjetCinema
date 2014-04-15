@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cinema
 {
-    class Salle
+    class Salle : Film
     {
 
         // Attributs
@@ -24,11 +24,30 @@ namespace Cinema
             return chiffre;
         }
 
+<<<<<<< HEAD
         public double tauxDeRemplissage()
         {
             double taux = 0;
 
             return taux;
+=======
+        // Constructeur
+
+        public Salle(int unNbPlace, int unNbPlaceTarifNormal, int unNbPlaceTarifReduit, double unPourcentageReduction, double unPrix, string uneAffiche, string unNom) :base(uneAffiche, unNom)
+        {
+            this.nbPlace = unNbPlace;
+            this.nbPlaceTarifNormal = unNbPlaceTarifNormal;
+            this.nbPlaceTarifReduit = unNbPlaceTarifReduit;
+            this.pourcentageReduction = unPourcentageReduction;
+            this.prix = unPrix;
+        }
+
+        // Méthodes
+
+        public void remiseAZero()
+        {
+
+>>>>>>> c0baebca6c519a415bc9d51b422c7f57cdceaac3
         }
 
     }
