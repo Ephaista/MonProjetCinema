@@ -15,23 +15,6 @@ namespace Cinema
         private double pourcentageReduction;
         private double prix;
 
-        public double chiffreDAffaire()
-        {
-            double chiffre=0;
-            double placeTarifNormal = nbPlaceTarifNormal * prix;
-            double placeTarifReduit = nbPlaceTarifReduit * (prix-(prix * (pourcentageReduction/100)));
-            chiffre = placeTarifNormal + nbPlaceTarifReduit;
-            return chiffre;
-        }
-
-
-        public double tauxDeRemplissage()
-        {
-            double taux = 0;
-
-            return taux;
-        }
-
         // Constructeur
 
         public Salle(int unNbPlace, int unNbPlaceTarifNormal, int unNbPlaceTarifReduit, double unPourcentageReduction, double unPrix, string uneAffiche, string unNom) :base(uneAffiche, unNom)
@@ -49,6 +32,23 @@ namespace Cinema
         {
 
 
+        }
+
+        public double chiffreDAffaire()
+        {
+            double chiffre = 0;
+            double placeTarifNormal = nbPlaceTarifNormal * prix;
+            double placeTarifReduit = nbPlaceTarifReduit * (prix - (prix * (pourcentageReduction / 100)));
+            chiffre = placeTarifNormal + nbPlaceTarifReduit;
+            return chiffre;
+        }
+
+
+        public double tauxDeRemplissage()
+        {
+            double taux = 0;
+
+            return taux;
         }
 
     }
