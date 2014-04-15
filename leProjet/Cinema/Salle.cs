@@ -24,13 +24,14 @@ namespace Cinema
             return chiffre;
         }
 
-<<<<<<< HEAD
+
         public double tauxDeRemplissage()
         {
             double taux = 0;
 
             return taux;
-=======
+        }
+
         // Constructeur
 
         public Salle(int unNbPlace, int unNbPlaceTarifNormal, int unNbPlaceTarifReduit, double unPourcentageReduction, double unPrix, string uneAffiche, string unNom) :base(uneAffiche, unNom)
@@ -47,7 +48,7 @@ namespace Cinema
         public void remiseAZero()
         {
 
->>>>>>> c0baebca6c519a415bc9d51b422c7f57cdceaac3
+
         }
 
     }
